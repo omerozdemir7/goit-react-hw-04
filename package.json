@@ -4,13 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "echo \"Replace this with your deploy command\"",
-    "update": "git add . && git commit -m \"update\" && git push && npm run build && npm run deploy"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "update": "git add . && git commit -m \"update\" && git push && npm run deploy"
+}
+,
   "dependencies": {
     "axios": "^1.13.2",
     "clsx": "^2.1.1",
