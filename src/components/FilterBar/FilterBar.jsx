@@ -1,8 +1,8 @@
 import css from "./FilterBar.module.css";
 
 const filters = [
-  { id: 'all', label: 'Tümü' },
-  { id: 'patterns', label: 'Desenler' },
+  { id: 'all', label: 'All' },
+  { id: 'patterns', label: 'Patterns' },
 ];
 
 export default function FilterBar({ activeFilter, onSelectFilter }) {
